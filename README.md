@@ -191,3 +191,8 @@ User Experience Considerations
 ###### **Technical Requirements** 
 
 The website will be developed using fundamental web development technologies suitable for small organisational websites.
+
+##### Sitemap(s)
+
+<img width="5712" height="4284" alt="sitemap" src="https://github.com/user-attachments/assets/ff54330c-5ee0-4cf6-87a8-40ddc1c5af82" />
+
