@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+:root {
+    --brand-blue: #5dade2;
+    --brand-orange: #e67e22;
+    --dark-bg: #2c3e50;
+    --light-bg: #f8f9fa;
+    --text-muted: #566573;
+}
+
+html {
+    font-size: 100%; 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    background-color: var(--light-bg);
+    color: var(--dark-bg);
+    line-height: 1.6;
+}
+
+/* LAYOUT & NAVIGATION (FLEXBOX) */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Flexbox container for nav */
+nav ul {
+    display: flex; 
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0.5rem 1rem;
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-bg);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+/* Interactive Pseudo-classes */
+nav a:hover { color: var(--brand-blue); }
+nav a:focus, nav a:active { 
+    outline: 2px solid var(--brand-orange);
+    color: var(--brand-orange); 
+}
+
+/* 3. TYPOGRAPHY & HERO SECTION */
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--brand-blue);
+}
+
+.hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero img {
+    width: 100%; /* Responsive Image */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+/* Call to Action (CTA) Button Styling */
+.cta-button {
+    display: inline-block;
+    background-color: var(--brand-orange);
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    h1 { font-size: 1.8rem; }
+    
+    .hero img { width: 90%; }
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}

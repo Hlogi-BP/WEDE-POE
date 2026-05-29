@@ -3,45 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry</title>
-
+    <title>Volunteer or Donate - Pfuna Vahn</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
-
-<header>
-    <h1>Support Us</h1>
- <nav>
-   <a href="index.html">Home</a>
-   <a href="about.html">About</a>
-   <a href="contact.html">Contact</a>
-   <a href="enquiry.html">Enquiry</a>
-   <a href="services.html">Services</a>
- </nav>
-</header>
-
-<hr>
-
 <body>
-    <h2>
-        Make a Donation or Volunteer
-    </h2>
 
-    <label><strong>Name:</strong></label><br>
-        <input type="text"><br><br>
+    <header>
+        <h1>Pfuna Vahn</h1>
+        <p><i>Make a Difference Today</i></p>
+    </header>
 
-    <label><strong>Email:</strong></label><br>
-    <input type="email"><br><br>  
-    
-     <label><strong>Phone:</strong></label><br>
-    <input type="number" maxlength="10"><br><br>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-     <label><strong>Message:</strong></label><br>
-    <textarea></textarea><br><br>
+    <main class="content-wrapper">
+        <section id="enquiry-intro">
+            <h2>Make a Donation or Volunteer</h2>
+            <p>Your support helps us provide essential care, food, and shelter for women and children in Pretoria. Please fill out the form below to let us know how you would like to help.</p>
+        </section>
+
+        <hr>
+
+        <section id="enquiry-form">
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your Details</legend>
+                    <p>
+                        <label for="full-name">Full Name:</label><br>
+                        <input type="text" id="full-name" name="name" required>
+                    </p>
+                    <p>
+                        <label for="user-email">Email Address:</label><br>
+                        <input type="email" id="user-email" name="email" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>How would you like to support us?</legend>
+                    <p>
+            
+                        <label for="interest">I am interested in:</label><br>
+                        <select id="interest" name="interest" required>
+                            <option value="">-- Please Select --</option>
+                            <option value="volunteer">Becoming a Volunteer</option>
+                            <option value="sponsor">Becoming a Sponsor / Donating</option>
+                            <option value="other">Other Enquiries</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="user-message">Additional Information:</label><br>
+                        <textarea id="user-message" name="message" rows="5" style="width: 100%;" placeholder="Tell us more about your skills or the type of donation..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p style="text-align: center; margin-top: 1.5rem;">
+                    <button type="submit" class="cta-button">Submit My Enquiry</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pfuna Vahn - Women & Children Centre. Pretoria, South Africa.</p>
+    </footer>
+
 </body>
-
-<hr>
-
-<footer>
-    <p>© 2026 Pfuna Vanhu. All rights reserved.</p>
-</footer>
-
 </html>
